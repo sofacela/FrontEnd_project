@@ -1,0 +1,19 @@
+main h3 {
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+/* #zdjecia{
+    margin: 0 auto;
+} */
+
+#zdjecia {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#zdjecia img {
+  margin: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 5px 7px 5px 0 #3b3c3f;
+}

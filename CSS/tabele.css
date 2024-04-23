@@ -1,0 +1,28 @@
+table {
+  background: lightyellow;
+  text-align: center;
+  width: 94%;
+  margin: 2%;
+  border: 1pt solid #1b2916;
+}
+caption {
+  font-size: 120%;
+  /* font-weight: bold; */
+}
+thead,
+tfoot {
+  background: #1a3b28;
+  color: white;
+  font-size: 110%;
+  /* padding: 5pt; */
+}
+td,
+th {
+  border: 1pt solid #1a3b28;
+}
+tfoot a {
+  color: white;
+}
+tbody tr:nth-of-type(2n + 2) {
+  background: white;
+}

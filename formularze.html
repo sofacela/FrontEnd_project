@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularze</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/formularze.css" type="text/css" />
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <h2>Szybki kurs HTML</h2>
+        <nav>
+          <ul>
+            <li><a href="index.html">Podstawy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li>
+              <a href="">Formularze</a>
+              <ul>
+                <li><a href="formularze.html">Pola formularza</a></li>
+                <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="galeria.html"
+                title="Galeria zdjęć gdzie pojechać tym latem"
+                >Galeria</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div id="main-content">
+        <main>
+          <section>
+            <h3>Podstawowe znaczniki formularza HTML to:</h3>
+            <ul>
+              <li>
+                &lt;form&gt; - znacznik podstawowy zawierający pola formularza
+              </li>
+              <li>
+                &lt;input&gt; - znacznik umożliwia wstawienie różnych pól(pole
+                tekstowe, przycisk typu radio, przycisk typu checkbox) w
+                zależności od wartości jego atrybutu type
+              </li>
+              <li>&lt;select&gt; - pole formularza typu lista rozwijana</li>
+              <li>&lt;textarea&gt; - pole formularza typu obszar tekstowy</li>
+              <li>&lt;button&gt; - pole formularza typu przycisk</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Przykładowy formularz HTML:</h3>
+            <br />
+
+            <form action="#" method="get">
+              <div class="two_column_inputs">
+                <label for="surname">Nazwisko:</label>
+                <input
+                  type="text"
+                  id="surname"
+                  name="surname"
+                  pattern="[A-Z][a-z]+(-[A-Z][a-z]+)?"
+                  title="Podaj nazwisko w formacie Twoje(-Nazwisko)"
+                  required
+                /><br />
+                <label for="age">Wiek: </label>
+                <input
+                  type="number"
+                  id="age"
+                  name="age"
+                  min="16"
+                  max="100"
+                  required
+                /><br />
+                <label for="country">Państwo:</label>
+                <select id="country" name="country">
+                  <option value="Poland">Polska</option>
+                  <option value="Ukraine">Ukraina</option>
+                  <option value="Italy">Włochy</option>
+                  <option value="Spain">Hiszpania</option>
+                  <option value="Turkey">Turcja</option></select
+                ><br />
+                <label for="email">Adres e-mail:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your.email@gmail.com"
+                  required
+                />
+              </div>
+
+              <h4>Zamawiam tutorial z języka:</h4>
+
+              <input type="checkbox" id="php" name="PHP" value="on" />
+              <label for="php">PHP</label>
+              <input type="checkbox" id="c/c++" name="C/C++" value="on" />
+              <label for="c/c++">C/C++</label>
+              <input type="checkbox" id="java" name="Java" value="on" />
+              <label for="java">Java</label>
+              <br />
+
+              <h4>Sposób zapłaty:</h4>
+
+              <input
+                type="radio"
+                id="eurocard"
+                name="paymethod"
+                value="eurocard"
+                required
+              />
+              <label for="eurocard">eurocard</label>
+              <input type="radio" id="visa" name="paymethod" value="visa" />
+              <label for="visa">visa</label>
+              <input
+                type="radio"
+                id="bank_transfer"
+                name="paymethod"
+                value="bank_transfer"
+              />
+              <label for="bank_transfer">przelew bankowy</label>
+              <br /><br />
+              <div id="end_form_buttons">
+                <input type="submit" value="Wyślij" />
+                <input type="reset" value="Anuluj" />
+              </div>
+            </form>
+          </section>
+        </main>
+        <aside>
+          <div class="box">
+            <h3>Walidatory:</h3>
+            <ul>
+              <li><a href="https://validator.w3.org/">HTML</a></li>
+              <li><a href="https://jigsaw.w3.org/css-validator/">CSS</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Kursy:</h3>
+            <ul>
+              <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+              <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+              <li><a href="https://www.w3schools.com/js/">JS</a></li>
+              <li><a href="https://www.w3schools.com/php/">PHP</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <footer>&copy;SL</footer>
+    </div>
+  </body>
+</html>

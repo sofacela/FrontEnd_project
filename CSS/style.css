@@ -1,0 +1,148 @@
+body {
+  background: #8a9cbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2,
+footer {
+  background: #0c3569;
+  color: #e6e9fb;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+header h2 {
+  border-radius: 10px 10px 0 0;
+}
+
+#content {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 90%;
+}
+#main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  background: #9ac6ac;
+  color: #0b213d;
+  padding: 1%;
+  width: 75%;
+  border-radius: 10px 10px 0 0;
+}
+
+aside {
+  width: 22%;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  padding: 5px 0 5px 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.box {
+  background: #0c3569;
+  color: #e6e9fb;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 5px;
+  width: 90%;
+  font-size: 90%;
+  border-radius: 10px;
+}
+
+.box a {
+  color: #b9ccb1;
+}
+
+/* Nowa nawigacja */
+nav {
+  text-align: left;
+  overflow: hidden;
+  font-family: calibri, tahoma;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+nav ul li {
+  border: 1px solid lightgray;
+  list-style-type: none;
+  background: #8a9cbf;
+  margin-right: 3px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 20%;
+}
+
+nav ul li:hover {
+  background: #e6e9fb;
+}
+
+nav ul li a {
+  display: block;
+  padding: 4pt;
+  text-decoration: none;
+  color: #0b213d;
+  font-size: 100%;
+}
+
+nav ul li ul {
+  overflow: hidden;
+  display: none;
+}
+
+nav ul li:hover ul {
+  position: absolute;
+  background: #e6e9fb;
+  border-radius: 0 0 10px 10px;
+  padding: 0;
+  display: block;
+  width: 25%;
+}
+
+nav ul li:hover ul li {
+  width: 100%;
+  background: #8a9cbf;
+}
+nav ul li ul li:hover {
+  background: #e6e9fb;
+}
+@media screen and (max-width: 720px) {
+  nav ul li {
+    width: 45%;
+  }
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  #main-content {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  main,
+  aside {
+    width: 90%;
+  }
+  main {
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+}

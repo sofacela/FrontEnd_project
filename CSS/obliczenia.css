@@ -1,0 +1,17 @@
+main .two_column_inputs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main label {
+  width: 20%;
+}
+main input {
+  width: 70%;
+}
+button{
+    margin-top: 10px;
+}
+h3{
+    margin-bottom: 10px;
+}

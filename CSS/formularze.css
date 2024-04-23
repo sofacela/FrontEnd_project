@@ -1,0 +1,23 @@
+ul {
+  list-style-type: square;
+}
+section:nth-of-type(2) .two_column_inputs{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+section:nth-of-type(2) .two_column_inputs label {
+  width: 20%;
+}
+
+section:nth-of-type(2) .two_column_inputs input,
+select {
+  width: 78%;
+}
+#end_form_buttons{
+  display: flex;
+  justify-content: space-around;
+}
+#end_form_buttons input{
+  width: 40%;
+}

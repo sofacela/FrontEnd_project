@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Obliczenia raty</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/obliczenia.css" type="text/css" />
+    <script src="JS/funkcje.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <h2>Szybki kurs HTML</h2>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Podstawy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li>
+              <a href="">Formularze</a>
+              <ul>
+                <li><a href="formularze.html">Pola formularza</a></li>
+                <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="galeria.html"
+                title="Galeria zdjęć gdzie pojechać tym latem"
+                >Galeria</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div id="main-content">
+        <main>
+          <h3>Pożyczka</h3>
+          <div class="two_column_inputs">
+            <label for="credit">Kwota:</label>
+            <input
+              type="text"
+              id="credit"
+              name="credit"
+              required
+              onchange="reset()"
+            /><br />
+            <label for="loan_number">Ile rat:</label>
+            <input
+              type="number"
+              id="loan_number"
+              name="loan_number"
+              min="1"
+              required
+              onchange="reset()"
+            /><br />
+            <label for="percent">Procent:</label>
+            <input
+              type="text"
+              id="percent"
+              name="percent"
+              required
+              onchange="reset()"
+            /><br />
+            <label for="month_loan">Rata miesięczna:</label>
+            <input
+              type="text"
+              id="month_loan"
+              name="month_loan"
+              disabled
+              value=""
+            /><br />
+            <label for="credit_w_pr">Kwota z odsetkami</label>
+            <input
+              type="text"
+              id="credit_w_pr"
+              name="credit_w_pr"
+              disabled
+              value=""
+            /><br />
+            <button onclick="oblicz()">Oblicz ratę stałą</button>
+          </div>
+        </main>
+        <aside>
+          <div class="box">
+            <h3>Walidatory:</h3>
+            <ul>
+              <li><a href="https://validator.w3.org/">HTML</a></li>
+              <li><a href="https://jigsaw.w3.org/css-validator/">CSS</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Kursy:</h3>
+            <ul>
+              <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+              <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+              <li><a href="https://www.w3schools.com/js/">JS</a></li>
+              <li><a href="https://www.w3schools.com/php/">PHP</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <footer>&copy;SL</footer>
+    </div>
+  </body>
+</html>
